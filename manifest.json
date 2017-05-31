@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+
+	"name": "Photograbber",
+	"description": "This add-on expects a Facebook page that is a photo gallery. It will then obtain all full high-res images and download them.",
+	"version": "1.0",
+
+	"browser_action": {
+		"default_icon": "icon.png"
+	},
+
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": true
+	},
+
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"activeTab",
+		"https://*.facebook.com/*"
+	]
+}
